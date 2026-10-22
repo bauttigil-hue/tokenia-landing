@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tokenia — Tokens de IA al mejor precio</title>
+  <meta name="description" content="Comprá tokens para los mejores modelos de IA desde una sola cuenta. Sin suscripciones, pagás solo lo que usás." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-glow"></div>
+
+  <!-- Navbar -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#" class="logo">⚡ Tokenia</a>
+      <nav class="nav-links">
+        <a href="#features">Beneficios</a>
+        <a href="#calculadora">Calculadora</a>
+        <a href="#precios">Precios</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a href="#precios" class="btn btn-small">Comprar</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero container">
+      <span class="badge">Nuevo · Modelos 2026 disponibles</span>
+      <h1>Todos los modelos de IA.<br /><span class="gradient-text">Una sola recarga.</span></h1>
+      <p class="hero-sub">
+        Comprá tokens una vez y usalos en los mejores modelos de lenguaje, imagen y voz.
+        Sin suscripciones, sin vencimientos, pagás solo lo que usás.
+      </p>
+      <div class="hero-actions">
+        <a href="#precios" class="btn">Ver paquetes</a>
+        <a href="#calculadora" class="btn btn-ghost">Calcular cuánto necesito</a>
+      </div>
+      <div class="stats">
+        <div><strong>+40</strong><span>modelos</span></div>
+        <div><strong>12k</strong><span>devs activos</span></div>
+        <div><strong>99.9%</strong><span>uptime</span></div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="container section">
+      <h2>¿Por qué Tokenia?</h2>
+      <p class="section-sub">Simple para empezar, potente para escalar.</p>
+      <div class="grid-3">
+        <article class="card">
+          <div class="icon">🔑</div>
+          <h3>Una sola API key</h3>
+          <p>Accedé a todos los proveedores con una única clave. Cambiá de modelo cambiando una línea.</p>
+        </article>
+        <article class="card">
+          <div class="icon">♾️</div>
+          <h3>Tokens que no vencen</h3>
+          <p>Lo que comprás es tuyo. Usalo hoy o dentro de seis meses, como prefieras.</p>
+        </article>
+        <article class="card">
+          <div class="icon">📊</div>
+          <h3>Panel en tiempo real</h3>
+          <p>Mirá cuánto gastás por proyecto, por modelo y por día. Cero sorpresas.</p>
+        </article>
+        <article class="card">
+          <div class="icon">⚡</div>
+          <h3>Baja latencia</h3>
+          <p>Servidores en Sudamérica para respuestas más rápidas desde Argentina.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🛡️</div>
+          <h3>Privacidad primero</h3>
+          <p>No guardamos tus prompts ni los usamos para entrenar nada. Nunca.</p>
+        </article>
+        <article class="card">
+          <div class="icon">💳</div>
+          <h3>Pagá como quieras</h3>
+          <p>Tarjeta, transferencia o billetera virtual. Facturación en pesos o dólares.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Calculator -->
+    <section id="calculadora" class="container section">
+      <div class="calc card">
+        <div>
+          <h2>¿Cuántos tokens necesitás?</h2>
+          <p class="section-sub left">Mové el slider según la cantidad de mensajes que mandás por día.</p>
+        </div>
+        <div class="calc-body">
+          <label for="msgs">Mensajes por día: <strong id="msgs-value">50</strong></label>
+          <input type="range" id="msgs" min="10" max="1000" step="10" value="50" />
+          <div class="calc-result">
+            <div>
+              <span class="muted">Tokens al mes</span>
+              <strong id="tokens-month">—</strong>
+            </div>
+            <div>
+              <span class="muted">Paquete recomendado</span>
+              <strong id="plan-reco" class="gradient-text">—</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="precios" class="container section">
+      <h2>Paquetes de tokens</h2>
+      <p class="section-sub">Pago único. Sin letra chica.</p>
+      <div class="grid-3 pricing">
+        <article class="card plan" data-plan="Starter">
+          <h3>Starter</h3>
+          <p class="price">$5 <span>USD</span></p>
+          <p class="muted">1 millón de tokens</p>
+          <ul>
+            <li>Acceso a modelos básicos</li>
+            <li>1 API key</li>
+            <li>Soporte por email</li>
+          </ul>
+          <button class="btn btn-ghost buy">Comprar</button>
+        </article>
+        <article class="card plan featured" data-plan="Pro">
+          <span class="ribbon">Más elegido</span>
+          <h3>Pro</h3>
+          <p class="price">$20 <span>USD</span></p>
+          <p class="muted">5 millones de tokens</p>
+          <ul>
+            <li>Todos los modelos</li>
+            <li>5 API keys</li>
+            <li>Panel de uso avanzado</li>
+            <li>Soporte prioritario</li>
+          </ul>
+          <button class="btn buy">Comprar</button>
+        </article>
+        <article class="card plan" data-plan="Business">
+          <h3>Business</h3>
+          <p class="price">$75 <span>USD</span></p>
+          <p class="muted">25 millones de tokens</p>
+          <ul>
+            <li>Todos los modelos</li>
+            <li>API keys ilimitadas</li>
+            <li>Equipos y roles</li>
+            <li>Soporte 24/7</li>
+          </ul>
+          <button class="btn btn-ghost buy">Comprar</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="container section narrow">
+      <h2>Preguntas frecuentes</h2>
+      <details>
+        <summary>¿Qué es un token?</summary>
+        <p>Es la unidad con la que los modelos de IA miden el texto. Aproximadamente, 1.000 tokens equivalen a unas 750 palabras.</p>
+      </details>
+      <details>
+        <summary>¿Los tokens vencen?</summary>
+        <p>No. Una vez que los comprás quedan en tu cuenta hasta que los uses.</p>
+      </details>
+      <details>
+        <summary>¿Puedo pedir reembolso?</summary>
+        <p>Sí, dentro de los 14 días si no usaste más del 10% del paquete.</p>
+      </details>
+      <details>
+        <summary>¿Sirve para proyectos de la facu?</summary>
+        <p>¡Obvio! El plan Starter alcanza de sobra para prácticas y trabajos prácticos.</p>
+      </details>
+    </section>
+
+    <!-- CTA -->
+    <section class="container section">
+      <div class="cta card">
+        <h2>Empezá hoy con 100.000 tokens gratis</h2>
+        <p class="muted">Registrate con tu email y probá todos los modelos sin pagar nada.</p>
+        <form id="signup" class="signup">
+          <input type="email" placeholder="tu@email.com" required />
+          <button class="btn" type="submit">Quiero mis tokens</button>
+        </form>
+        <p id="signup-msg" class="signup-msg" hidden>¡Listo! Te llegará un email con tus tokens 🎉</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <span>⚡ Tokenia © <span id="year"></span></span>
+    <span class="muted">Proyecto de práctica · No es un servicio real</span>
+  </footer>
+
+  <div id="toast" class="toast" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
